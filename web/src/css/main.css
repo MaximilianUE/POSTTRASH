@@ -1,5 +1,9 @@
+:root {
+  --red: #fca0a0;
+}
+
 body {
-  background: red;
+  background: var(--red);
 
     div {
       background: green;
