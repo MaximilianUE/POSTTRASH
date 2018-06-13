@@ -2,15 +2,18 @@
   --red: #fca0a0;
 }
 
+$test: green;
+
 body {
   background: var(--red);
 
     div {
       display: grid;
       user-select: none;
+      grid-template-columns: repeat(3, 1fr); 
 
       &:hover {
-        background: yellow;
+        background: $test;
         transition: all .5s;
       }
     }
