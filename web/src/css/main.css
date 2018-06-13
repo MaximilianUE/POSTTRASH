@@ -6,10 +6,12 @@ body {
   background: var(--red);
 
     div {
-      background: green;
+      display: grid;
+      user-select: none;
 
       &:hover {
         background: yellow;
+        transition: all .5s;
       }
     }
 
