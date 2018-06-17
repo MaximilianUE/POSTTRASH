@@ -1,16 +1,5 @@
 
 body {
-  background: var(--red);
-
-    div {
-      display: grid;
-      user-select: none;
-      grid-template-columns: repeat(3, 1fr); 
-
-      &:hover {
-        background: $test;
-        transition: all .5s;
-      }
-    }
-
+  background: var(--gray);
+  color: $white;
 }

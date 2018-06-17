@@ -1,0 +1,6 @@
+
+.demoContainer {
+    display: grid;
+    user-select: none;
+    grid-template-columns: repeat(3, 1fr); 
+}
