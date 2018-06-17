@@ -10,6 +10,7 @@ const path = require('path');
 
 const htmlEntry = './*.html';
 const cssEntry = './src/css/main.css';
+const jsEntry = './src/js/main.js';
 const imgEntry = './src/img';
 
 
@@ -18,7 +19,7 @@ const outputFolder = './dist/';
 /* -------------------------------------- */
 
 module.exports = (env) => ({
-    entry: [cssEntry],
+    entry: [cssEntry, jsEntry],
     output: {
         path: path.join(__dirname, outputFolder)
     },
@@ -31,7 +32,12 @@ module.exports = (env) => ({
             { loader: 'css-loader', options: { importLoaders: 1 } },
             'postcss-loader'
           ]
-        }
+        },
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          loader: "babel-loader" 
+        },
       ]
     },
     plugins: [
