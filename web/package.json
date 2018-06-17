@@ -1,13 +1,13 @@
 {
-  "name": "web",
+  "name": "SimplePlate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Boilerplate for simple web projects",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --watch --mode development",
     "build": "webpack -p --mode production"
   },
-  "author": "",
+  "author": "Maximilian Becher",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^0.28.11",
