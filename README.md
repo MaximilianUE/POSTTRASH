@@ -1,18 +1,25 @@
-# POSTTRASH
+# SimplePlate
+## Boilerplate for simple web projects
 
+### features:
 
-## install:
+> webpack <br>
+> postcss <br>
 
-`git clone https://github.com/MaximilianUE/POSTTRASH.git`
+> simple customizing (settings inside webpack)
+
+### install:
+
+`git clone https://github.com/MaximilianUE/SimplePlate.git`
 
 `cd ./web && npm install`
 
 
-## usage: 
+### usage: 
 
 `npm run watch`
 
-## to view postcss-styling correctly 
+### to view postcss-styling correctly 
 
 install Visual Studio Code Plugin: 'language-postcss' <br>
 and add
