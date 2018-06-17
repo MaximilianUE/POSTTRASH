@@ -15,9 +15,13 @@
 `cd ./web && npm install`
 
 
-### usage: 
+### usage development: 
 
 `npm run watch`
+
+### build
+
+`npm run build`
 
 ### to view postcss-styling correctly 
 
