@@ -1,14 +1,21 @@
 "use strict";
 
+/* -------------- Settings -------------- */
+
+const cssEntry = './src/css/main.css';
+const outputFolder = './dist/';
+
+/* -------------------------------------- */
+
 let webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const path = require('path');
 
 module.exports = (env) => ({
-    entry: ['./src/css/main.css'],
+    entry: [cssEntry],
     output: {
-        path: path.join(__dirname, './dist/')
+        path: path.join(__dirname, outputFolder)
     },
     module: {
       rules: [
