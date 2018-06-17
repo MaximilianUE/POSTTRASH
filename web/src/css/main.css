@@ -1,21 +1,4 @@
-:root {
-  --red: #fca0a0;
-}
 
-$test: green;
+@import './variables/colors.css';
 
-body {
-  background: var(--red);
-
-    div {
-      display: grid;
-      user-select: none;
-      grid-template-columns: repeat(3, 1fr); 
-
-      &:hover {
-        background: $test;
-        transition: all .5s;
-      }
-    }
-
-}
+@import './basics/body.css';
