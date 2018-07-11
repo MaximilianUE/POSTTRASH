@@ -12,14 +12,13 @@
 
 `git clone https://github.com/MaximilianUE/SimplePlate.git`
 
-`cd ./web && npm install`
+`cd ./web && yarn`
 
 
 ### usage development: 
 
-`npm run watch`
+`yarn run watch`
 
 ### build
 
-`npm run build`
-
+`yarn run build`
