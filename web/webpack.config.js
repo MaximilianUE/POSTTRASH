@@ -9,7 +9,7 @@ const path = require('path');
 /* -------------- Settings -------------- */
 
 const htmlEntry = './*.html';
-const cssEntry = './src/css/main.css';
+const cssEntry = './src/css/main.scss';
 const jsEntry = './src/js/main.js';
 const imgEntry = './src/img';
 
@@ -26,11 +26,12 @@ module.exports = (env) => ({
     module: {
       rules: [
         {
-          test: /\.css$/,
+          test: /\.scss$/,
           use: [
             MiniCssExtractPlugin.loader,
             { loader: 'css-loader', options: { importLoaders: 1 } },
-            'postcss-loader'
+            'postcss-loader', // returns scss
+            'sass-loader' //compiles scss to css
           ]
         },
         {
