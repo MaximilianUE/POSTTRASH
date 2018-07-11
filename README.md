@@ -23,15 +23,3 @@
 
 `npm run build`
 
-### to view postcss-styling correctly 
-
-install Visual Studio Code Plugin: 'language-postcss' <br>
-and add
-
-``` 
-"files.associations": {
-    "*.css": "postcss"
-}
-```
-
-to your workspace-settings
