@@ -15,6 +15,7 @@
     "babel-preset-env": "^1.7.0",
     "css-loader": "^0.28.11",
     "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.2",
     "postcss": "^6.0.22",
     "postcss-loader": "^2.1.5",
     "precss": "^3.1.2",
@@ -25,6 +26,7 @@
   "dependencies": {
     "autoprefixer": "^8.6.2",
     "copy-webpack-plugin": "^4.5.1",
-    "postcss-preset-env": "^5.1.0"
+    "postcss-preset-env": "^5.1.0",
+    "sass-loader": "^7.0.3"
   }
 }
