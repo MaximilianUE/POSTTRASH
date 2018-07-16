@@ -15,10 +15,10 @@
 `cd ./web && yarn`
 
 
-### usage development: 
+### development 
 
 `yarn run watch`
 
-### build
+### production
 
 `yarn run build`
