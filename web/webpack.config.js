@@ -29,8 +29,8 @@ module.exports = (env) => ({
           test: /\.scss$/,
           use: [
             MiniCssExtractPlugin.loader,
-            { loader: 'css-loader', options: { importLoaders: 1 } },
-            'postcss-loader', // returns scss
+            { loader: 'css-loader', options: { importLoaders: 1, url: false } },
+            'postcss-loader', // returns scss           
             'sass-loader' //compiles scss to css
           ]
         },
@@ -46,7 +46,7 @@ module.exports = (env) => ({
           filename: "[name].css"
       }),
       new CopyWebpackPlugin([
-        { from: imgEntry, to: 'img' },
+      //  { from: imgEntry, to: 'img' },
         { from: htmlEntry},
       ])
     ]
