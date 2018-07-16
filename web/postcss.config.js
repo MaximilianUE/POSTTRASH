@@ -6,5 +6,6 @@ module.exports = {
       require('precss'),
       require('postcss-preset-env'),
       autoprefixer({ grid: true }),
+      require('cssnano'),
   ]
 }

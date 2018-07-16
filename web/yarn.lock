@@ -341,7 +341,7 @@ autoprefixer@^6.3.1:
     postcss "^5.2.16"
     postcss-value-parser "^3.2.3"
 
-autoprefixer@^8.5.0, autoprefixer@^8.6.2:
+autoprefixer@^8.6.2:
   version "8.6.2"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-8.6.2.tgz#51d42ff13243820a582a53ecca20dedaeb7f2efd"
   dependencies:
@@ -350,6 +350,17 @@ autoprefixer@^8.5.0, autoprefixer@^8.6.2:
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
     postcss "^6.0.22"
+    postcss-value-parser "^3.2.3"
+
+autoprefixer@^8.6.5:
+  version "8.6.5"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-8.6.5.tgz#343f3d193ed568b3208e00117a1b96eb691d4ee9"
+  dependencies:
+    browserslist "^3.2.8"
+    caniuse-lite "^1.0.30000864"
+    normalize-range "^0.1.2"
+    num2fraction "^1.2.2"
+    postcss "^6.0.23"
     postcss-value-parser "^3.2.3"
 
 aws-sign2@~0.6.0:
@@ -1071,6 +1082,10 @@ caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
 caniuse-lite@^1.0.30000823, caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000851:
   version "1.0.30000852"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000852.tgz#8b7510cec030cac7842e52beca2bf292af65f935"
+
+caniuse-lite@^1.0.30000864, caniuse-lite@^1.0.30000865:
+  version "1.0.30000865"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000865.tgz#70026616e8afe6e1442f8bb4e1092987d81a2f25"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -3355,11 +3370,11 @@ postcss-attribute-case-insensitive@^2.0.0:
     postcss "^6.0.0"
     postcss-selector-parser "^2.2.3"
 
-postcss-attribute-case-insensitive@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-attribute-case-insensitive/-/postcss-attribute-case-insensitive-3.0.0.tgz#03ec32ed221ed0a184fae26a99fea82c7de1a3b9"
+postcss-attribute-case-insensitive@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-attribute-case-insensitive/-/postcss-attribute-case-insensitive-3.0.1.tgz#efd2c40b5d3d27dfab5678073bf652f76eaf4352"
   dependencies:
-    postcss "^6.0.22"
+    postcss "^6.0.23"
     postcss-selector-parser "^4.0.0"
 
 postcss-calc@^5.2.0:
@@ -3370,11 +3385,11 @@ postcss-calc@^5.2.0:
     postcss-message-helpers "^2.0.0"
     reduce-css-calc "^1.2.6"
 
-postcss-color-functional-notation@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-color-functional-notation/-/postcss-color-functional-notation-1.0.1.tgz#a12fe1302fa63935e440859c9d53730023c0eadd"
+postcss-color-functional-notation@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-color-functional-notation/-/postcss-color-functional-notation-1.0.2.tgz#836fbc5e88a4ebd958ba6a3f9e2dad7792166c9f"
   dependencies:
-    postcss "^6.0.22"
+    postcss "^6.0.23"
     postcss-values-parser "^1.5.0"
 
 postcss-color-hex-alpha@^3.0.0:
@@ -3710,11 +3725,11 @@ postcss-nesting@^4.2.1:
   dependencies:
     postcss "^6.0.11"
 
-postcss-nesting@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-5.0.0.tgz#973e3a7dc6426543affc0b0beb367c3b2a8d9923"
+postcss-nesting@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-6.0.0.tgz#4c45276a065765ec063efe1e4daf75c131518991"
   dependencies:
-    postcss "^6.0.21"
+    postcss "^6.0.22"
 
 postcss-normalize-charset@^1.1.0:
   version "1.1.1"
@@ -3789,17 +3804,17 @@ postcss-preset-env@^3.2.2:
     postcss-selector-matches "^3.0.1"
     postcss-selector-not "^3.0.1"
 
-postcss-preset-env@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/postcss-preset-env/-/postcss-preset-env-5.1.0.tgz#cc4dabd24fd39d2f2a78655b876debebff94f07c"
+postcss-preset-env@^5.2.2:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/postcss-preset-env/-/postcss-preset-env-5.2.2.tgz#b3bc339ac36d3f8465d634e888f66e6e9997e9ba"
   dependencies:
-    autoprefixer "^8.5.0"
+    autoprefixer "^8.6.5"
     browserslist "^3.2.8"
-    caniuse-lite "^1.0.30000844"
+    caniuse-lite "^1.0.30000865"
     cssdb "^3.1.0"
-    postcss "^6.0.22"
-    postcss-attribute-case-insensitive "^3.0.0"
-    postcss-color-functional-notation "^1.0.1"
+    postcss "^6.0.23"
+    postcss-attribute-case-insensitive "^3.0.1"
+    postcss-color-functional-notation "^1.0.2"
     postcss-color-hex-alpha "^3.0.0"
     postcss-color-mod-function "^2.4.2"
     postcss-color-rebeccapurple "^3.1.0"
@@ -3818,7 +3833,7 @@ postcss-preset-env@^5.1.0:
     postcss-lab-function "^1.0.1"
     postcss-logical "^1.1.1"
     postcss-media-minmax "^3.0.0"
-    postcss-nesting "^5.0.0"
+    postcss-nesting "^6.0.0"
     postcss-overflow-shorthand "^1.0.1"
     postcss-page-break "^1.0.0"
     postcss-place "^3.0.1"
