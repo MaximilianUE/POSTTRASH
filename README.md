@@ -1,24 +1,28 @@
 # SimplePlate
 ## Boilerplate for simple web projects
 
-### features:
+### Features:
 
 > webpack <br>
 > postcss <br>
+> babel <br>
 
 > simple customizing (settings inside webpack)
 
-### install:
+### Setup:
 
 `git clone https://github.com/MaximilianUE/SimplePlate.git`
 
 `cd ./web && yarn`
 
+### Ret-2-go development with Webpack Dev-Server
 
-### development 
+`yarn start`
+
+### Development 
 
 `yarn run watch`
 
-### production
+### Production
 
 `yarn run build`
