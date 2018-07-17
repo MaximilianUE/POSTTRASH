@@ -46,7 +46,7 @@ module.exports = (env) => ({
           filename: "[name].css"
       }),
       new CopyWebpackPlugin([
-      //  { from: imgEntry, to: 'img' },
+        { from: imgEntry, to: 'img' },
         { from: htmlEntry},
       ])
     ]
