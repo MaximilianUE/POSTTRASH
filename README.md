@@ -1,11 +1,12 @@
 # SimplePlate
-## Boilerplate for simple web projects
+## Boilerplate for your everyday web projects
 
 ### Features:
 
 > webpack <br>
 > postcss <br>
 > babel <br>
+> handlebars <br>
 
 > simple customizing (settings inside webpack)
 
