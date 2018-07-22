@@ -39,6 +39,12 @@ module.exports = (env) => ({
           exclude: /node_modules/,
           loader: "babel-loader" 
         },
+        {
+          test: /\.hbs$/,
+          use: [{
+            loader: "handlebars-loader",
+          }]
+        }
       ]
     },
     plugins: [
