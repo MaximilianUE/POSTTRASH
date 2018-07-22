@@ -7,23 +7,33 @@
     <title>SimplePlate</title>
     <!-- imports from output folder -->
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    
 </head>
 <body>
-    <div class="demoContainer">
-        <p>(Kinda) supporting ms-grid</p>
-        <div>
-            <h1 style="text-align: center">SimplePlate by Maximilian Becher</h1>
-            <img src="./img/webpack-logo.gif" alt="webpack-logo">
+
+    <script id="site" type="text/x-handlebars-template">
+
+        <p>huhu</p>
+        {{> header }}
+            
+        <div class="demoContainer">
+            <p>(Kinda) supporting ms-grid</p>
+            <div>
+                <img src="./img/webpack-logo.gif" alt="webpack-logo">
+            </div>
+            <div>
+                <p> Supporting: </p>
+                <ul>
+                    <li>Postcss with Sass</li>
+                    <li>Babel</li>
+                    <li>Handlebars</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <p> Supporting: </p>
-            <ul>
-                <li>Postcss with Sass</li>
-                <li>Babel</li>
-            </ul>
-        </div>
-    </div>
+
+        {{> footer title="this should be the context" }}
+
+    </script>
+
     <!-- imports from output folder -->
     <script src="main.js"></script>
 </body>
