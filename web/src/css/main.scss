@@ -1,8 +1,6 @@
-
-// full scss support
+//use normalize
+@import '~normalize.css';
 
 @import './variables/colors';
-
 @import './basics/body';
-
 @import './layouts/demo';
