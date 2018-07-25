@@ -23,6 +23,7 @@ module.exports = (env) => ({
     output: {
         path: path.join(__dirname, outputFolder)
     },
+    mode: process.env.WEBPACK_SERVE ? 'development' : 'production',
     module: {
       rules: [
         {
