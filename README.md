@@ -3,11 +3,10 @@
 
 ### Features:
 
-> webpack <br>
-> postcss <br>
-> babel <br>
-
-> simple customizing (settings inside webpack)
+* webpack <br>
+* postcss <br>
+* babel <br>
+* dev-server <br>
 
 ### Setup:
 
@@ -15,14 +14,18 @@
 
 `cd ./web && yarn`
 
-### Ret-2-go development with Webpack Dev-Server
+### Ret-2-go Development with Webpack Serve
 
 `yarn start`
 
-### Development 
-
-`yarn run watch`
+for reference see [Webpack Serve Documentation](https://github.com/webpack-contrib/webpack-serve)
 
 ### Production
 
 `yarn run build`
+
+
+#### simple customizing 
+
+* project structure settings > webpack.config.js
+* devserver settings > '.serverc.json'
