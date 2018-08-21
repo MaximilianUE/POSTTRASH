@@ -24,15 +24,16 @@ module.exports = (env) => ({
         path: path.join(__dirname, outputFolder)
     },
     mode: process.env.WEBPACK_SERVE ? 'development' : 'production',
+    devtool: process.env.WEBPACK_SERVE ? 'source-map': '',
     module: {
       rules: [
         {
           test: /\.scss$/,
           use: [
-            MiniCssExtractPlugin.loader,
-            { loader: 'css-loader', options: { importLoaders: 1, url: false } },
-            'postcss-loader', // returns scss           
-            'sass-loader' //compiles scss to css
+            MiniCssExtractPlugin.loader, //from top to bottom!
+            { loader: 'css-loader', options: { importLoaders: 1, url: false, sourceMap: true } },
+            {loader: 'postcss-loader', options: { sourceMap: true } },        
+            {loader: 'sass-loader', options: { sourceMap: true } }
           ]
         },
         {
