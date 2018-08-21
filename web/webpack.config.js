@@ -12,6 +12,7 @@ const htmlEntry = './*.html';
 const cssEntry = './src/css/main.scss';
 const jsEntry = './src/js/main.js';
 const imgEntry = './src/img';
+const fontsEntry = './src/fonts';
 
 
 const outputFolder = './dist/';
@@ -50,6 +51,8 @@ module.exports = (env) => ({
       new CopyWebpackPlugin([
         { from: imgEntry, to: 'img' },
         { from: htmlEntry},
-      ])
+        { from: fontsEntry, to: 'fonts'},
+      ]),
+
     ]
   })
