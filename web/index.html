@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SimplePlate</title>
+    <script> //use polyfills only if needed
+        var modernBrowser = (
+        'assign' in Object
+        );
+
+        if ( !modernBrowser ) {
+        var scriptElement = document.createElement('script');
+        
+        scriptElement.async = false;
+        scriptElement.src = '/polyfills.bundle.js';
+        document.head.appendChild(scriptElement);
+    }
+    </script>
     <!-- imports from output folder -->
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     

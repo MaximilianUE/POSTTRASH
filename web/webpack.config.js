@@ -12,6 +12,7 @@ const htmlEntry = './*.html';
 const cssEntry = './src/css/main.scss';
 
 const mainJs = './src/js/main.js';
+const polyfillJs = './src/js/polyfills.js';
 
 const imgEntry = './src/img';
 const fontsEntry = './src/fonts';
@@ -24,6 +25,7 @@ const outputFolder = './dist/';
 module.exports = (env) => ({
     entry: {
       main: cssEntry,
+      polyfills: polyfillJs,
       index: mainJs,
     },
     output: {
