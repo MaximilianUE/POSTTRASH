@@ -4,6 +4,7 @@ let webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const FilterPlugin = require('filter-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const path = require('path');
 
@@ -61,7 +62,7 @@ module.exports = (env) => ({
         { from: htmlEntry},
         { from: fontsEntry, to: 'fonts'},
       ]),
-
       new FilterPlugin({files:['main.bundle.js', 'main.bundle.js.map']}),
+      new CleanWebpackPlugin(['dist']),
     ]
   })
