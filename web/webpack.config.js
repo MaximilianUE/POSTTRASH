@@ -2,7 +2,8 @@
 
 let webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const FilterPlugin = require('filter-webpack-plugin');
 
 const path = require('path');
 
@@ -16,7 +17,6 @@ const polyfillJs = './src/js/polyfills.js';
 
 const imgEntry = './src/img';
 const fontsEntry = './src/fonts';
-
 
 const outputFolder = './dist/';
 
@@ -62,5 +62,6 @@ module.exports = (env) => ({
         { from: fontsEntry, to: 'fonts'},
       ]),
 
+      new FilterPlugin({files:['main.bundle.js', 'main.bundle.js.map']}),
     ]
   })
