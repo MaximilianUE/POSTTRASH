@@ -27,12 +27,14 @@
     "precss": "^3.1.2",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
+    "stylelint-config-recommended": "^2.1.0",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.4",
     "webpack-serve": "^2.0.2"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "stylelint": "^9.5.0"
   }
 }
