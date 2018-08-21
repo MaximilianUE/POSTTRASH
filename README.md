@@ -7,6 +7,7 @@
 * postcss <br>
 * babel <br>
 * dev-server <br>
+* linting <br>
 
 ### Setup:
 
@@ -22,10 +23,11 @@ for reference see [Webpack Serve Documentation](https://github.com/webpack-contr
 
 ### Production
 
-`yarn run build`
+`yarn build`
 
 
 #### simple customizing 
 
 * project structure settings > webpack.config.js
 * devserver settings > '.serverc.json'
+* stylelint settings > '.stylelintrc'
