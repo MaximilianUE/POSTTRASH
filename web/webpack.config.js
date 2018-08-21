@@ -10,7 +10,9 @@ const path = require('path');
 
 const htmlEntry = './*.html';
 const cssEntry = './src/css/main.scss';
-const jsEntry = './src/js/main.js';
+
+const mainJs = './src/js/main.js';
+
 const imgEntry = './src/img';
 const fontsEntry = './src/fonts';
 
@@ -20,9 +22,13 @@ const outputFolder = './dist/';
 /* -------------------------------------- */
 
 module.exports = (env) => ({
-    entry: [cssEntry, jsEntry],
+    entry: {
+      main: cssEntry,
+      index: mainJs,
+    },
     output: {
-        path: path.join(__dirname, outputFolder)
+        path: path.join(__dirname, outputFolder),
+        filename: '[name].bundle.js',
     },
     mode: process.env.WEBPACK_SERVE ? 'development' : 'production',
     devtool: process.env.WEBPACK_SERVE ? 'source-map': '',
