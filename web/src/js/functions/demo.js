@@ -1,6 +1,6 @@
 
-const demo = document.querySelectorAll("div");
+const demo = document.querySelectorAll(".js-list");
 
-demo.forEach(e => {
+[...demo].forEach(e => {
     console.log(e);
 });
