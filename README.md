@@ -1,33 +1,45 @@
-# SimplePlate
+# ⛳ SimplePlate
 ## Boilerplate for simple web projects
 
-### Features:
+everything you need to build a well-structured project, while writing better code using the newest technologies.  
+Oh and it will work in all browsers 😉💻
+(Chrome, Safari, Edge, Firefox and IE11)
+
+### ✨ Feature List:
 
 * webpack <br>
-* postcss <br>
+* postcss
+	* supports CSS Grid via [Autoprefixer](https://github.com/postcss/autoprefixer)
 * babel <br>
-* dev-server <br>
+* webpack-serve dev-server <br>
 * linting <br>
 
-### Setup:
+### 🏗️ Setup:
 
 `git clone https://github.com/MaximilianUE/SimplePlate.git`
 
-`cd ./web && yarn`
+`yarn`
 
-### Ret-2-go Development with Webpack Serve
+### 🏃 Ret-2-go Development with Webpack Serve
 
 `yarn start`
 
 for reference see [Webpack Serve Documentation](https://github.com/webpack-contrib/webpack-serve)
 
-### Production
+### 🚚 Production
 
 `yarn build`
 
 
-#### simple customizing 
+### ⚙️ Simple Customisation
 
-* project structure settings > webpack.config.js
-* devserver settings > '.serverc.json'
-* stylelint settings > '.stylelintrc'
+#### Global 🌐
+* devserver settings > `.serverc.json`
+* project structure settings > `webpack.config.js`
+* support these browser versions > `browserslistrc`
+
+#### CSS 🎨
+* postcss addons > `.postcss.config.js`
+* stylelint settings > `.stylelintrc`
+
+made with ♥️ by [Diverent2](https://twitter.com/diverent2)
