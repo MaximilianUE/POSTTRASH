@@ -1,6 +1,49 @@
-//use normalize
-@import '~normalize.css';
 
-@import './variables/colors';
-@import './basics/body';
+/** Vendors
+= 3rd party styles and imports
+---------------------------------------------------------*/
+@import '~normalize.css';
+@import './vendor/remcalc';
+
+
+/** Base
+= global styles such as colors, animations, fonts...
+---------------------------------------------------------*/
+@import './base/general';
+@import './base/colors';
+@import './base/fonts';
+@import './base/breakpoints';
+
+
+/** Bits
+= smallest elements that build the foundation for all other
+parts.
+eg. button, link, list, table;
+basically everything small described by an html tag.
+---------------------------------------------------------*/
+//@import './bits/button';
+//@import './bits/link';
+//@import './bits/nav';
+
+
+/** Components
+= larger self-contained parts that could be used by themselves
+eg. teaser-card, slider, breadcrumbs, menu, tabs
+---------------------------------------------------------*/
+//@import './components/breadcrumbs';
+//@import './components/menu';
+
+
+/** Modules
+= an arrangement of components that form an self-contained module
+eg. header, footer, section, widget
+---------------------------------------------------------*/
+//@import './modules/header';
+//@import './modules/footer';
+
+
+/** Layouts
+= layout of modules via css grid or simular layout technique
+eg. homepage, content-site, dashboard => based on wireframes
+---------------------------------------------------------*/
 @import './layouts/demo';
