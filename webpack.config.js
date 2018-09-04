@@ -34,7 +34,7 @@ module.exports = (env) => ({
         filename: '[name].bundle.js',
     },
     mode: process.env.WEBPACK_SERVE ? 'development' : 'production',
-    devtool: process.env.WEBPACK_SERVE ? 'source-map': '',
+  devtool: process.env.WEBPACK_SERVE ? 'source-map' : '',
     module: {
       rules: [
         {
@@ -42,8 +42,8 @@ module.exports = (env) => ({
           use: [
             MiniCssExtractPlugin.loader, //from top to bottom!
             { loader: 'css-loader', options: { importLoaders: 1, url: false, sourceMap: true } },
-            {loader: 'postcss-loader', options: { sourceMap: true } },        
-            {loader: 'sass-loader', options: { sourceMap: true } }
+          { loader: 'postcss-loader', options: { sourceMap: true } },
+          { loader: 'sass-loader', options: { sourceMap: true } }
           ]
         },
         {
@@ -59,10 +59,10 @@ module.exports = (env) => ({
       }),
       new CopyWebpackPlugin([
         { from: imgEntry, to: 'img' },
-        { from: htmlEntry},
-        { from: fontsEntry, to: 'fonts'},
+        { from: htmlEntry },
+        { from: fontsEntry, to: 'fonts' },
       ]),
-      new FilterPlugin({files:['main.bundle.js', 'main.bundle.js.map']}),
+    new FilterPlugin({ files: ['main.bundle.js', 'main.bundle.js.map'] }),
       new CleanWebpackPlugin(['dist']),
     ]
   })
