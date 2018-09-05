@@ -12,6 +12,7 @@ Oh and it will work in all browsers 😉💻
 	* supports CSS Grid via [Autoprefixer](https://github.com/postcss/autoprefixer)
 * babel <br>
 * webpack-serve dev-server <br>
+* svg spritesheet <br>
 * linting <br>
 
 ### 🏗️ Setup:
@@ -30,6 +31,21 @@ for reference see [Webpack Serve Documentation](https://github.com/webpack-contr
 
 `yarn build`
 
+### 👩‍💻 usage
+
+#### svg-icons (spritesheet)
+
+To use svg icons refer to their filename via icon-[name]
+
+ex. 
+
+> img/icons/arrow.svg
+
+```html
+<svg width="60" height="60">
+	<use xlink:href="/img/spritesheet.svg#icon-[name]"></use>
+</svg>
+```
 
 ### ⚙️ Simple Customisation
 
