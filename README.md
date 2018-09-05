@@ -39,7 +39,7 @@ To use svg icons refer to their filename via icon-[name]
 
 ex. 
 
-> img/icons/arrow.svg
+> img/icons/[name].svg
 
 ```html
 <svg width="60" height="60">
