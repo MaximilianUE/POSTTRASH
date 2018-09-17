@@ -48,6 +48,21 @@ ex.
 </svg>
 ```
 
+#### media queries 4.0
+
+ex.
+
+```css
+@media (--large) {
+    color: red;
+}
+```
+
+Default vars: `--large, --medium, —small` > `.src/css/base/_breakpoints.scss`
+
+see also [postcss-preset-env documentation](https://preset-env.cssdb.org/features#media-query-ranges)
+
+
 ### ⚙️ Simple Customisation
 
 #### Global 🌐
