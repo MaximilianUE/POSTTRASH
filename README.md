@@ -1,15 +1,16 @@
 # ⛳ SimplePlate
 ## Boilerplate for simple web projects
 
-everything you need to build a well-structured project, while writing better code using the newest technologies.  
+ <strong>everything you need </strong> to build a well-structured project, while <strong>writing better code using the newest technologies. </strong> 
 Oh and it will work in all browsers 😉💻
-(Chrome, Safari, Edge, Firefox and IE11)
+(Chrome, Safari, Edge, Firefox and(!) IE11)
 
 ### ✨ Feature List:
 
 * webpack <br>
 * postcss
-	* supports CSS Grid via [Autoprefixer](https://github.com/postcss/autoprefixer)
+	* CSS Grid support  via [Autoprefixer](https://github.com/postcss/autoprefixer)
+	* [csstools/normalize.css](https://github.com/csstools/normalize.css)
 * babel <br>
 * webpack-serve dev-server <br>
 * svg spritesheet <br>
