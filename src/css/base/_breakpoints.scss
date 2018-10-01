@@ -1,5 +1,24 @@
-//mobile first
+/*
+These are the current breakpoint-boundaries:
 
-@custom-media --large (width >= 1024px);
-@custom-media --medium (768px <= width < 1024px);
-@custom-media --small (width < 768px);
+xlarge: 1800px;
+large: 1200px;
+medium: 900px;
+small: 600px;
+
+Sadly there is no good way to update these media queries via variables atm.
+Hopefully this will change some time soon, until then, changing these values
+should be a one time task and the comments above the media queries are here to help.
+*/
+
+@custom-media --xlarge-up screen and (width > 1800px); //screen and (width > xlarge);
+
+@custom-media --large-up screen and (width >= 1200px); //screen and (width >= large);
+@custom-media --large-only screen and (900px < width <= 1200px); //screen and (medium < width <= large);
+@custom-media --large-down screen and (width <= 1200px); //screen and (width <= large);
+
+@custom-media --medium-up screen and (width >= 900px); // screen and (width>= medium)
+@custom-media --medium-only screen and (600px < width <= 900px); // screen and (small < width <= medium)
+@custom-media --medium-down screen and (width <= 900px); // screen and (width <= medium)
+
+@custom-media --small-only screen and (width <= 600px); // screen and (width <= small)
