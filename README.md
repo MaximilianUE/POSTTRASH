@@ -18,9 +18,11 @@ Oh and it will work in all browsers 😉💻
 
 ### 🏗️ Setup:
 
-`git clone https://github.com/MaximilianUE/SimplePlate.git`
+clone this repository `git clone https://github.com/MaximilianUE/SimplePlate.git`
 
-`yarn`
+`cd SimplePlate`
+
+install modules `yarn`
 
 ### 🏃 Ret-2-go Development with Webpack Serve
 
