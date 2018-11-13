@@ -22,17 +22,21 @@ clone this repository `git clone https://github.com/MaximilianUE/SimplePlate.git
 
 `cd SimplePlate`
 
-install modules `yarn`
+install modules  
+`yarn` using yarn (recommanded)  
+`npm install` using npm
 
 ### 🏃 Ret-2-go Development with Webpack Serve
 
-`yarn start`
+`yarn start` using yarn  
+`npm start` using npm
 
 for reference see [Webpack Serve Documentation](https://github.com/webpack-contrib/webpack-serve)
 
 ### 🚚 Production
 
-`yarn build`
+`yarn build` using yarn  
+`npm run build` using npm
 
 ### 👩‍💻 usage
 
@@ -55,12 +59,22 @@ ex.
 ex.
 
 ```css
-@media (--large) {
+@media (--large-down) {
     color: red;
 }
 ```
 
-Default vars: `--large, --medium, —small` > `.src/css/base/_breakpoints.scss`
+Default vars: 
+
+```css
+--xlarge-[up],
+--large-[up/down/only],
+--medium[up/down/only],
+--small-[only]
+```
+
+for more info talk a look at 
+[./src/css/base/_breakpoints.scss](https://github.com/MaximilianUE/SimplePlate/blob/master/src/css/base/_breakpoints.scss).
 
 see also [postcss-preset-env documentation](https://preset-env.cssdb.org/features#media-query-ranges)
 
