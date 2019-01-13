@@ -18,7 +18,7 @@ Oh and it will work in all browsers 😉💻
 
 ### 🏗️ Setup:
 
-clone this repository `git clone https://github.com/MaximilianUE/SimplePlate.git`
+clone this repository `git clone https://github.com/diverent2/SimplePlate.git`
 
 `cd SimplePlate`
 
@@ -74,7 +74,7 @@ Default vars:
 ```
 
 for more info talk a look at 
-[./src/css/base/_breakpoints.scss](https://github.com/MaximilianUE/SimplePlate/blob/master/src/css/base/_breakpoints.scss).
+[./src/css/base/_breakpoints.scss](https://github.com/diverent2/SimplePlate/blob/master/src/css/base/_breakpoints.scss).
 
 see also [postcss-preset-env documentation](https://preset-env.cssdb.org/features#media-query-ranges)
 
@@ -90,4 +90,4 @@ see also [postcss-preset-env documentation](https://preset-env.cssdb.org/feature
 * postcss addons > `.postcss.config.js`
 * stylelint settings > `.stylelintrc`
 
-made with ♥️ by [Diverent2](https://twitter.com/diverent2)
+made with ♥️ by [diverent2](https://twitter.com/diverent2)
