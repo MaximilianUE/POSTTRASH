@@ -1,10 +1,9 @@
-
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    @media (--medium-down) {
-        color: red;
-    }
+  @media (--medium-down) {
+    color: red;
+  }
 }

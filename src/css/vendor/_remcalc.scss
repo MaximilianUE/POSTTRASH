@@ -34,12 +34,12 @@ $global-font-size: 100% !default;
 
   // If the base font size is a %, then multiply it by 16px
   // This is because 100% font size = 16px in most all browsers
-  @if unit($base) == '%' {
+  @if unit($base) == "%" {
     $base: ($base / 100%) * 16px;
   }
 
   // Using rem as base allows correct scaling
-  @if unit($base) == 'rem' {
+  @if unit($base) == "rem" {
     $base: strip-unit($base) * 16px;
   }
 
@@ -57,7 +57,7 @@ $global-font-size: 100% !default;
 // Converts a unitless, pixel, or rem value to em, for use in breakpoints.
 @function -zf-bp-to-em($value) {
   // Pixel and unitless values are converted to rems
-  @if unit($value) == 'px' or unitless($value) {
+  @if unit($value) == "px" or unitless($value) {
     $value: rem-calc($value, $base: 16px);
   }
 
@@ -74,18 +74,18 @@ $global-font-size: 100% !default;
 /// @returns {Number} A number in rems, calculated based on the given value and the base pixel value. rem values are passed through as is.
 @function -zf-to-rem($value, $base: null) {
   // Check if the value is a number
-  @if type-of($value) != 'number' {
+  @if type-of($value) != "number" {
     @warn inspect($value) + ' was passed to rem-calc(), which is not a number.';
     @return $value;
   }
 
   // Transform em into rem if someone hands over 'em's
-  @if unit($value) == 'em' {
+  @if unit($value) == "em" {
     $value: strip-unit($value) * 1rem;
   }
 
   // Calculate rem if units for $value is not rem or em
-  @if unit($value) != 'rem' {
+  @if unit($value) != "rem" {
     $value: strip-unit($value) / strip-unit($base) * 1rem;
   }
 
@@ -104,7 +104,6 @@ $global-font-size: 100% !default;
 ///
 /// @return {Number} - Unitless number
 @function unitless-calc($value, $base: null) {
-
   // If no base is defined, defer to the global font size
   @if $base == null {
     $base: $global-font-size;
@@ -113,33 +112,33 @@ $global-font-size: 100% !default;
   // First, lets convert our $base to pixels
 
   // If the base font size is a %, then multiply it by 16px
-  @if unit($base) == '%' {
+  @if unit($base) == "%" {
     $base: ($base / 100%) * 16px;
   }
 
-  @if unit($base) == 'rem' {
+  @if unit($base) == "rem" {
     $base: strip-unit($base) * 16px;
   }
 
-  @if unit($base) == 'em' {
+  @if unit($base) == "em" {
     $base: strip-unit($base) * 16px;
   }
 
   // Now lets convert our value to pixels too
-  @if unit($value) == '%' {
+  @if unit($value) == "%" {
     $value: ($value / 100%) * $base;
   }
 
-  @if unit($value) == 'rem' {
+  @if unit($value) == "rem" {
     $value: strip-unit($value) * $base;
   }
 
-  @if unit($value) == 'em' {
+  @if unit($value) == "em" {
     $value: strip-unit($value) * $base;
   }
 
   // 'px'
-  @if unit($value) == 'px' {
+  @if unit($value) == "px" {
     @return strip-unit($value) / strip-unit($base);
   }
 

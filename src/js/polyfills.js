@@ -1,3 +1,2 @@
-
 /* Import main polyfills */
-import 'babel-polyfill';
+import "babel-polyfill";
