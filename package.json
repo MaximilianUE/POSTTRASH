@@ -37,6 +37,7 @@
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "stylelint": "^9.5.0",
+    "stylelint-config-prettier": "^5.0.0",
     "stylelint-config-recommended": "^2.1.0",
     "svg-spritemap-webpack-plugin": "^2.7.0",
     "webpack": "^4.12.0",
