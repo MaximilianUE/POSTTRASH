@@ -31,17 +31,13 @@ install modules
 using yarn (recommanded)
 
 ```
-
 $ yarn start
-
 ```
 
 using npm
 
 ```
-
 $ npm install
-
 ```
 
 ### 🏃 Ret-2-go Development with Webpack Serve
@@ -49,17 +45,13 @@ $ npm install
 using yarn
 
 ```
-
 $ yarn start
-
 ```
 
 using npm
 
 ```
-
 $ npm start
-
 ```
 
 for reference see [Webpack Serve Documentation](https://github.com/webpack-contrib/webpack-serve)
