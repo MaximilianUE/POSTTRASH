@@ -1,18 +1,15 @@
-
 /** Vendors
 = 3rd party styles and imports
 ---------------------------------------------------------*/
-@import './vendor/remcalc';
-
+@import "./vendor/remcalc";
 
 /** Base
 = global styles such as colors, animations, fonts...
 ---------------------------------------------------------*/
-@import './base/general';
-@import './base/colors';
-@import './base/fonts';
-@import './base/breakpoints';
-
+@import "./base/general";
+@import "./base/colors";
+@import "./base/fonts";
+@import "./base/breakpoints";
 
 /** Bits
 = smallest elements that build the foundation for all other
@@ -24,7 +21,6 @@ basically everything that COULD be described by a simple html tag.
 //@import './bits/link';
 //@import './bits/nav';
 
-
 /** Components
 = larger self-contained parts that could be used by themselves
 eg. teaser-card, slider, breadcrumbs, menu, tabs
@@ -32,17 +28,15 @@ eg. teaser-card, slider, breadcrumbs, menu, tabs
 //@import './components/breadcrumbs';
 //@import './components/menu';
 
-
 /** Modules
 = an arrangement of components that form an self-contained module
 eg. header, footer, section, widget
 ---------------------------------------------------------*/
-@import './modules/header';
+@import "./modules/header";
 //@import './modules/footer';
-
 
 /** Layouts
 = layout of modules via css grid or simular layout technique
 eg. homepage, content-site, dashboard => based on wireframes
 ---------------------------------------------------------*/
-@import './layouts/demo';
+@import "./layouts/demo";

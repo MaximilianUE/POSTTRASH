@@ -1,3 +1,2 @@
-
 /* Import functions*/
-import './functions/demo';
+import "./functions/demo";
