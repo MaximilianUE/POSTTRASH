@@ -16,6 +16,7 @@ Oh and it will work in all browsers 😉💻
 - webpack-serve dev-server <br>
 - svg spritesheet <br>
 - linting <br>
+- prettier auto formating <br>
 
 ### 🏗️ Setup:
 
@@ -117,10 +118,15 @@ see also [postcss-preset-env documentation](https://preset-env.cssdb.org/feature
 - devserver settings > `.serverc.json`
 - project structure settings > `webpack.config.js`
 - support these browser versions > `browserslistrc`
+- prettier auto-formating > `prettierrc`
 
 #### CSS 🎨
 
 - postcss addons > `.postcss.config.js`
 - stylelint settings > `.stylelintrc`
+
+#### JS 🔩
+
+- eslint > `.eslintrc.json`
 
 made with ♥️ by [diverent2](https://twitter.com/diverent2)
