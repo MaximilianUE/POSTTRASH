@@ -78,6 +78,6 @@ module.exports = env => ({
       }
     }),
     new FilterPlugin({ files: ["main.bundle.js", "main.bundle.js.map"] }),
-    new CleanWebpackPlugin(["dist"])
+    new CleanWebpackPlugin()
   ]
 });
