@@ -1,5 +1,5 @@
-const autoprefixer = require("autoprefixer");
 const postcssNormalize = require("postcss-normalize");
+const postcssPresetEnv = require("postcss-preset-env");
 
 module.exports = {
   syntax: "postcss-scss",
@@ -8,7 +8,9 @@ module.exports = {
     require("postcss-reporter")({ clearReportedMessages: true }), // ?
     postcssNormalize({ forceImport: true }), //only use normalize for supported browsers
     require("precss"), //allows sass like structure
-    require("postcss-preset-env"),
-    autoprefixer({ grid: true })
+    postcssPresetEnv({
+      //handles support for old browsers
+      autoprefixer: { grid: "autoplace" }
+    })
   ]
 };
