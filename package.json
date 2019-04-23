@@ -1,6 +1,6 @@
 {
   "name": "simpleplate",
-  "version": "1.0.0",
+  "version": "0.9",
   "description": "Boilerplate for simple web projects",
   "main": "index.js",
   "scripts": {
