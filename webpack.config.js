@@ -68,11 +68,14 @@ module.exports = env => ({
       { from: htmlEntry },
       { from: fontsEntry, to: "fonts" }
     ]),
-    new SVGSpritemapPlugin({
-      src: iconsEntry + "*.svg",
-      filename: imageOutput + "spritesheet.svg",
-      prefix: "icon-",
-      svg4everybody: true
+    new SVGSpritemapPlugin([iconsEntry + "*.svg"], {
+      sprite: {
+        prefix: "icon-"
+      },
+      output: {
+        filename: imageOutput + "spritesheet.svg",
+        svg4everybody: true
+      }
     }),
     new FilterPlugin({ files: ["main.bundle.js", "main.bundle.js.map"] }),
     new CleanWebpackPlugin(["dist"])
