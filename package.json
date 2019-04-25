@@ -4,8 +4,8 @@
   "description": "Boilerplate for simple web projects",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-serve ./webpack.config.js",
-    "build": "webpack -p --mode production"
+    "start": "webpack-dev-server --hot --mode=development",
+    "build": "webpack -p --mode=production"
   },
   "husky": {
     "hooks": {
