@@ -26,7 +26,7 @@ const imageOutput = "./img/";
 
 /* -------------------------------------- */
 
-module.exports = env => ({
+module.exports = (env, argv) => ({
   entry: {
     main: cssEntry,
     polyfills: polyfillJs,
@@ -36,8 +36,12 @@ module.exports = env => ({
     path: path.join(__dirname, outputFolder),
     filename: "[name].bundle.js"
   },
-  mode: process.env.WEBPACK_SERVE ? "development" : "production",
-  devtool: process.env.WEBPACK_SERVE ? "source-map" : "",
+  devServer: {
+    compress: true,
+    port: 4200,
+    open: true
+  },
+  devtool: argv.mode === "development" ? "source-map" : "",
   module: {
     rules: [
       {

@@ -117,7 +117,7 @@ see also [postcss-preset-env documentation](https://preset-env.cssdb.org/feature
 
 #### Global 🌐
 
-- devserver settings > `.serverc.json`
+- dev-server settings > `webpack.config.js`
 - project structure settings > `webpack.config.js`
 - support these browser versions > `.browserslistrc`
 - prettier auto-formating > `.prettierrc`
