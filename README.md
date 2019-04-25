@@ -1,3 +1,5 @@
+[![Build Status](https://david-dm.org/diverent2/simpleplate/dev-status.svg)](https://david-dm.org/diverent2/simpleplate?type=dev)
+
 # ⛳ SimplePlate
 
 ## Boilerplate for simple web projects
@@ -117,8 +119,8 @@ see also [postcss-preset-env documentation](https://preset-env.cssdb.org/feature
 
 - devserver settings > `.serverc.json`
 - project structure settings > `webpack.config.js`
-- support these browser versions > `browserslistrc`
-- prettier auto-formating > `prettierrc`
+- support these browser versions > `.browserslistrc`
+- prettier auto-formating > `.prettierrc`
 
 #### CSS 🎨
 
