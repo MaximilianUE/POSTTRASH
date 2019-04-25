@@ -11,11 +11,11 @@ Oh and it will work in all browsers 😉💻
 ### ✨ Feature List:
 
 - webpack <br>
+- webpack-dev-server <br>
 - postcss
   - CSS Grid support via [Autoprefixer](https://github.com/postcss/autoprefixer)
   - [csstools/normalize.css](https://github.com/csstools/normalize.css)
 - babel <br>
-- webpack-serve dev-server <br>
 - svg spritesheet <br>
 - linting <br>
 - prettier auto formating <br>
@@ -31,15 +31,11 @@ $ cd SimplePlate
 
 install modules
 
-using yarn (recommanded)
-
-```
+```bash
+// using yarn (recommended)
 $ yarn start
-```
 
-using npm
-
-```
+//using npm
 $ npm install
 ```
 
@@ -47,13 +43,11 @@ $ npm install
 
 using yarn
 
-```
+```bash
+// using yarn (recommended)
 $ yarn start
-```
 
-using npm
-
-```
+// using npm
 $ npm start
 ```
 
@@ -61,15 +55,11 @@ for reference see [Webpack Serve Documentation](https://github.com/webpack-contr
 
 ### 🚚 Production
 
-using yarn
-
-```
+```bash
+// using yarn (recommended)
 $ yarn build
-```
 
-using npm
-
-```
+// using npm
 $ npm run build
 ```
 
@@ -117,8 +107,8 @@ see also [postcss-preset-env documentation](https://preset-env.cssdb.org/feature
 
 #### Global 🌐
 
-- dev-server settings > `webpack.config.js`
-- project structure settings > `webpack.config.js`
+- dev-server settings > `webpack.config.js > devServer`
+- project structure settings > `webpack.config.js > Settings`
 - support these browser versions > `.browserslistrc`
 - prettier auto-formating > `.prettierrc`
 
