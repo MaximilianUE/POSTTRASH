@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Format: `[Version] - YYYY-MM-DD`
 
-## [0.9 - Unreleased]
+## [v1.0.0] - Unreleased
+
+## [v0.10.0](https://github.com/diverent2/simpleplate/releases/tag/v0.10.0) - 2019-04-25
 
 ### Added
 
@@ -17,8 +19,14 @@ Format: `[Version] - YYYY-MM-DD`
 
 ### Changed
 
+- upgrated all dependencies
 - babel version
 - lock node-version
+- webpack dev-server setup from `webpack-serve` to `webpack-dev-server`
+
+### Removed
+
+- `.serverc` (now in `webpack.config.js`)
 
 ## [older versions | old (Nov 2018), hence incomplete 🤷]
 
