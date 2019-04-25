@@ -13,12 +13,14 @@ Oh and it will work in all browsers 😉💻
 - webpack <br>
 - webpack-dev-server <br>
 - postcss
-  - CSS Grid support via [Autoprefixer](https://github.com/postcss/autoprefixer)
   - [csstools/normalize.css](https://github.com/csstools/normalize.css)
-- babel <br>
+  - Sass-like with [PreCSS](https://github.com/jonathantneal/precss)
+  - CSS Grid support with [Autoprefixer](https://github.com/postcss/autoprefixer)
+  - upcoming CSS features and browser compatibility with [Preset-Env](https://preset-env.cssdb.org)
+- [Babel](https://babeljs.io/) for ES6 support <br>
 - svg spritesheet <br>
 - linting <br>
-- prettier auto formating <br>
+- [prettier](https://prettier.io/) auto formating <br>
 
 ### 🏗️ Setup:
 
@@ -39,9 +41,7 @@ $ yarn start
 $ npm install
 ```
 
-### 🏃 Ret-2-go Development with Webpack Serve
-
-using yarn
+### 🏃 Ret-2-go Development with Webpack-Dev-Server
 
 ```bash
 // using yarn (recommended)
@@ -51,7 +51,7 @@ $ yarn start
 $ npm start
 ```
 
-for reference see [Webpack Serve Documentation](https://github.com/webpack-contrib/webpack-serve)
+for reference see [Webpack-Dev-Server Documentation](https://github.com/webpack/webpack-dev-server)
 
 ### 🚚 Production
 
