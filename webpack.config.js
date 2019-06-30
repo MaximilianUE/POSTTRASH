@@ -11,18 +11,28 @@ const path = require("path");
 
 /* -------------- Settings -------------- */
 
-const htmlEntry = "./*.html";
-const cssEntry = "./src/css/main.scss";
+const cosmiconfig = require("cosmiconfig");
+const explorer = cosmiconfig("simpleplate");
 
-const mainJs = "./src/js/main.js";
-const polyfillJs = "./src/js/polyfills.js";
+function getSimplePlateConfig() {
+  const configFile = explorer.searchSync();
+  const config = configFile.config;
+  return config;
+}
 
-const imgEntry = "./src/img";
-const iconsEntry = "./src/img/icons/";
-const fontsEntry = "./src/fonts";
+const simplePlateConfig = getSimplePlateConfig();
 
-const outputFolder = "./dist/";
-const imageOutput = "./img/";
+const {
+  htmlEntry,
+  cssEntry,
+  mainJs,
+  polyfillJs,
+  imgEntry,
+  iconsEntry,
+  fontsEntry
+} = simplePlateConfig.paths.input;
+
+const { outputFolder, imageOutput } = simplePlateConfig.paths.output;
 
 /* -------------------------------------- */
 
