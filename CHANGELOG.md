@@ -7,7 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Format: `[Version] - YYYY-MM-DD`
 
-## [v1.0.0] - Unreleased
+## [v0.11.0] - Unreleased
+
+### Added
+
+- .simpleplaterc config file
+
+### Changed
+
+- change how config imports are handled
 
 ## [v0.10.0](https://github.com/diverent2/simpleplate/releases/tag/v0.10.0) - 2019-04-25
 
