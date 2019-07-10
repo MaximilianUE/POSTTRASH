@@ -22,17 +22,46 @@ function getSimplePlateConfig() {
 
 const simplePlateConfig = getSimplePlateConfig();
 
-const {
-  htmlEntry,
-  cssEntry,
-  mainJs,
-  polyfillJs,
-  imgEntry,
-  iconsEntry,
-  fontsEntry
-} = simplePlateConfig.paths.input;
+const spcDefaultOpts = {
+  paths: {
+    input: {
+      htmlEntry: "./*.html",
+      cssEntry: "./src/css/main.scss",
+      mainJs: "./src/js/main.js",
+      polyfillJs: "./src/js/polyfills.js",
+      imgEntry: "./src/img",
+      iconsEntry: "./src/img/icons/",
+      fontsEntry: "./src/fonts"
+    },
+    output: {
+      outputFolder: "./dist/",
+      imageOutput: "./img/"
+    }
+  }
+};
 
-const { outputFolder, imageOutput } = simplePlateConfig.paths.output;
+const spcDefaultPaths = spcDefaultOpts.paths;
+const spcDefaultPathInput = spcDefaultPaths.input;
+const spcDefaultPathOutput = spcDefaultPaths.output;
+
+const spcPaths = simplePlateConfig.paths;
+const spcPathInput = spcPaths.input;
+const spcPathOutput = spcPaths.output;
+
+const htmlEntry = spcPathInput.htmlEntry || spcDefaultPathInput.htmlEntry;
+const cssEntry = spcPathInput.cssEntry || spcDefaultPathInput.cssEntry;
+const mainJs = spcPathInput.mainJs || spcDefaultPathInput.mainJs;
+const polyfillJs = spcPathInput.polyfillJs || spcDefaultPathInput.polyfillJs;
+const imgEntry = spcPathInput.imgEntry || spcDefaultPathInput.imgEntry;
+const iconsEntry = spcPathInput.iconsEntry || spcDefaultPathInput.iconsEntry;
+const fontsEntry = spcPathInput.fontsEntry || spcDefaultPathInput.fontsEntry;
+
+console.log(spcPathOutput.imageOutput);
+
+const outputFolder =
+  spcPathOutput.outputFolder || spcDefaultPathOutput.outputFolder;
+const imageOutput =
+  spcPathOutput.imageOutput || spcDefaultPathOutput.imageOutput;
 
 /* -------------------------------------- */
 
