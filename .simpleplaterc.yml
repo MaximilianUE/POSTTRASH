@@ -1,0 +1,12 @@
+paths:
+  input:
+    html: "./*.html"
+    css: "./src/css/main.scss"
+    js: "./src/js/main.js"
+    polyfills: "./src/js/polyfills.js"
+    images: "./src/img"
+    icons: "./src/img/icons/"
+    fonts: "./src/fonts"
+  output:
+    build: "./dist/"
+    images: "./img/"
