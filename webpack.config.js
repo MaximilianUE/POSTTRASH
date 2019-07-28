@@ -6,14 +6,39 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const FilterPlugin = require("filter-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const SVGSpritemapPlugin = require("svg-spritemap-webpack-plugin");
+const cosmiconfig = require("cosmiconfig");
 
 const path = require("path");
 
 /* -------------- Settings -------------- */
 
-const cosmiconfig = require("cosmiconfig");
-const explorer = cosmiconfig("simpleplate");
+const spConfigFile = cosmiconfig("simpleplate").searchSync();
 
+let spConfig;
+if (!spConfigFile) {
+  spConfig = {};
+} else {
+  spConfig = spConfigFile.config;
+}
+
+const { paths } = spConfig;
+const { input, output } = paths || {};
+const {
+  htmlEntry = "./*.html",
+  cssEntry = "./src/css/main.scss",
+  mainJs = "./src/js/main.js",
+  polyfillJs = "./src/js/polyfills.js",
+  imgEntry = "./src/img",
+  iconsEntry = "./src/img/icons/",
+  fontsEntry = "./src/fonts"
+} = input || {};
+
+const { outputFolder = "./dist/", imageOutput = "./img/" } = output || {};
+
+console.log("htmlEntry: " + htmlEntry);
+console.log("outputFolder: " + outputFolder);
+
+/*
 function getSimplePlateConfig() {
   const configFile = explorer.searchSync();
   const config = configFile.config;
@@ -62,6 +87,7 @@ const outputFolder =
   spcPathOutput.outputFolder || spcDefaultPathOutput.outputFolder;
 const imageOutput =
   spcPathOutput.imageOutput || spcDefaultPathOutput.imageOutput;
+*/
 
 /* -------------------------------------- */
 
@@ -78,7 +104,7 @@ module.exports = (env, argv) => ({
   devServer: {
     compress: true,
     port: 4200,
-    open: true
+    open: false
   },
   devtool: argv.mode === "development" ? "source-map" : "",
   module: {
