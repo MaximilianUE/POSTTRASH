@@ -35,7 +35,7 @@ install modules
 
 ```bash
 // using yarn (recommended)
-$ yarn start
+$ yarn
 
 //using npm
 $ npm install
